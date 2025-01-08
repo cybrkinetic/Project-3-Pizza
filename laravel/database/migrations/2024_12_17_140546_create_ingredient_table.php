@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('ingredient', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('ingredientNaam', 50);
+            $table->string('unit', 50);
         });
     }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5ExkJ/RprmA=",
+  "dgSpecHash": "rjEKtOeI+Ac=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\Project 3\\StonksPIzzaProject\\StonksPizzaWPF\\StonksPizzaWPF.csproj",
+  "projectFilePath": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\Project 3\\StonksPizzaWPF\\wpf\\StonksPizzaWPF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Roman\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\Roman\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",

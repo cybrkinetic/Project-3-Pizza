@@ -1797,11 +1797,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\Project 3\\StonksPizzaProject\\StonksPizzaWPF\\StonksPizzaWPF.csproj",
+      "projectUniqueName": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\Project 3\\StonksPizzaWPF\\wpf\\StonksPizzaWPF.csproj",
       "projectName": "StonksPizzaWPF",
-      "projectPath": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\Project 3\\StonksPizzaProject\\StonksPizzaWPF\\StonksPizzaWPF.csproj",
+      "projectPath": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\Project 3\\StonksPizzaWPF\\wpf\\StonksPizzaWPF.csproj",
       "packagesPath": "C:\\Users\\Roman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\Project 3\\StonksPizzaProject\\StonksPizzaWPF\\obj\\",
+      "outputPath": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\Project 3\\StonksPizzaWPF\\wpf\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Roman\\AppData\\Roaming\\NuGet\\NuGet.Config",

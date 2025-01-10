@@ -64,7 +64,7 @@
         </ListView>
 
         <Grid.Background>
-            <ImageBrush ImageSource="Assets/image.png"/>
+            <ImageBrush ImageSource="Assets/StonksPizzaLOGO.png" Stretch="Uniform"/>
         </Grid.Background>
 
         <Grid.RowDefinitions>

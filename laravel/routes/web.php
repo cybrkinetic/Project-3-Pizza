@@ -6,6 +6,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pizzeria.home');
 });
+Route::get('/menu', function() {
+    return view('pizzeria.menu');
+});
+Route::get('/order', function() {
+    return view('pizzeria.order');
+});
+Route::get('/search', function() {
+    return view('pizzeria.search');
+});
+Route::get('/register', function () {
+    return view('auth.register');
+});
+Route::get('/login', function () {
+    return view('auth.login');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');

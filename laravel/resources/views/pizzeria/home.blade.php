@@ -57,7 +57,7 @@
   <!-- Rechter kolom -->
   <div class="hidden sm:block"></div>
 </div>
-
+@include('pizzeria.footer')
   
 </body>
 </html>

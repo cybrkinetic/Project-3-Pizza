@@ -5,14 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
-
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-    <title>Document</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-
+    <title>Header</title>
     @vite('resources/css/app.css')
 </head>
 
@@ -36,7 +31,7 @@
         <!-- Nav menu -->
         <nav id="menu" class="hidden sm:flex sm:space-x-4">
             <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
-                <li><a href="/menu" class="text-2xl font-koulen text-[#483F3F] mt-2 mr-2">Menu</a></li>
+                <li><a href="/menu" class="text-2xl font-koulen text-[#483F3F] mt-2 mr-2 {{ request()->is('menu') ? 'bg-[#D9D9D9] rounded px-2' : '' }}">Menu</a></li>
                 <li><a href="/register" class="text-2xl font-koulen text-[#483F3F] mt-2 mr-2">Registreren</a></li>
                 <li><a href="/login" class="text-2xl font-koulen text-[#483F3F] mt-2 mr-2">Inloggen</a></li>
                 <li><a href="/search" class="text-2xl font-koulen text-[#483F3F] mt-2"><img
@@ -46,17 +41,8 @@
             </ul>
         </nav>
     </header>
-
-
-
-    <!-- hamburger icon script -->
-    <script>
-    document.getElementById('menu-toggle').addEventListener('click', function() {
-        const menu = document.getElementById('menu');
-        menu.classList.toggle('hidden');
-    });
-    </script>
-
+    <!-- Header script -->
+    <script src="js/header.js"></script>
 </body>
 
 </html>

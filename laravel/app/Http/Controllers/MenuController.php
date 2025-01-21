@@ -15,10 +15,10 @@ class MenuController extends Controller
      */
     public function index()
     {
-        $pizzalijst = PizzaModel::all();
-        $groottelijst = SizeModel::all();
+        $pizzalijst = Pizza::all();
+        $groottelijst = Size::all();
 
-    return view('menu', ['pizzalijst' => $pizzalijst , 'groottelijst' => $groottelijst]);
+    return view('pizzeria.menu', ['pizzalijst' => $pizzalijst , 'groottelijst' => $groottelijst]);
     }
 
     /**
@@ -26,7 +26,10 @@ class MenuController extends Controller
      */
     public function store(Request $request){
 
-        BesteldePizzaModel::create(
+        if (!auth()->check()) {
+            return redirect()->route('register')->with('message', 'Please register or log in to place an order.');
+        }
+        BesteldePizza::create(
             [
             'orderId' => null,
             'pizzaId' => $request['PizzaID'],
@@ -34,7 +37,7 @@ class MenuController extends Controller
             'pizzaStatusId' => 6,
             'userId' => $request['UserID']
         ]);
-        return redirect()->route('menu')
+        return redirect()->route('menu.index')
             ->with('success', 'Pizza added successfully.');
     }
 

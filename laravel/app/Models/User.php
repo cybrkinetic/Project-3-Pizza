@@ -45,4 +45,8 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+    public function Besteldepizza(): belongsToMany
+    {
+        return $this->belongsToMany(Pizza::class,'besteldepizza', 'pizzaId' ,'userId' );
+    }
 }

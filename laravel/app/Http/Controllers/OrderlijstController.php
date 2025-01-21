@@ -13,7 +13,7 @@ class OrderlijstController extends Controller
      */
     public function index()
     {
-        $orderlijst = OrderModel::where('userId', auth()->id())->get();
+        $orderlijst = Order::where('userId', auth()->id())->get();
 
     return view('orderlijst', ['orderlijst' => $orderlijst]);
     }
@@ -31,13 +31,13 @@ class OrderlijstController extends Controller
      */
     public function store(Request $request){
 
-        $order = new OrderModel;
+        $order = new Order;
         $order->statusId = 1;
         $order->userId = auth()->id();
         $order->save();
 
         $id = $order->id;
-        $nieuweOrder = BesteldePizzaModel::where('orderId', '=' , null)->get();
+        $nieuweOrder = BesteldePizza::where('orderId', '=' , null)->get();
 
         foreach ($nieuweOrder as $aangemaakteOrder){
             $aangemaakteOrder->orderId = $id;
@@ -52,8 +52,8 @@ class OrderlijstController extends Controller
     public function show($id)
     {
 
-        $besteldePizzas = BesteldePizzaModel::all()->where('orderId', '=', $id);
-        $order = OrderModel::find($id);
+        $besteldePizzas = BesteldePizza::all()->where('orderId', '=', $id);
+        $order = Order::find($id);
         $totaalPrijs = 0;
         foreach($besteldePizzas as $besteldePizza)
         {
@@ -89,7 +89,7 @@ class OrderlijstController extends Controller
      */
     public function destroy($id)
     {
-        $order = OrderModel::find($id);
+        $order = Order::find($id);
         $order->statusId = 10;
         $order->save();
 

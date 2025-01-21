@@ -27,25 +27,35 @@
    </nav>
    <!-- Menu vakjes -->
    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
+   @foreach($pizzalijst as $pizza)
     <!-- Rectangular Menu Card -->
-    @foreach ($pizzalijst as $pizza)
-    <form action="{{ route('menu.store) }}" method="POST">
-        @csrf
-        <?php $userid = auth()->id(); ?>
     <div class="bg-[#666060] rounded-md shadow-lg">
         <div class="h-28 bg-[#7B7373] rounded ml-3 mr-3 mt-3">
-        <img src="img/pizza-margherita-27409337.jpg" class="w-full h-full object-cover rounded"></img>
+        <img src="{{ asset('img/' . strtolower(str_replace(' ', '-', $pizza->pizzaNaam)) . '.jpg') }}" alt="{{ $pizza->pizzaNaam }}" class="w-full h-full object-cover rounded"></img>
         </div>
         <div class="p-4">
+        <form class="pizzabox" action="{{ route('menu.store') }}" method="POST">
+            @csrf
             <p class="text-white text-l mb-1">{{ $pizza->pizzaNaam }}</p>
-            <p class="text-white text-l mb-3">{{ $pizza->pizzaPrijs }}</p>
+            
+            <input type="hidden" name="PizzaID" value="{{ $pizza->id }}">
+            @if (auth()->id() != null)
+                            <input type="hidden" name="UserID" value="{{ auth()->id() }}">
+                        @endif
+            <p class="text-white text-l mb-3">€{{ number_format($pizza->pizzaPrijs, 2) }}<br><span class="text-xs"> *Prijs verschilt van grootte</span></p>
             <div class="flex justify-between items-right">
                 <div></div>
-            <button class="bg-[#72C35C] text-white px-4 py-2 text-xl rounded-md hover:bg-[#61A84E] font-koulen">
-                <a href="/edit">Bestel Nu</a></button>
+                <select id="formaat" name="FormaatID" class="select rounded mr-12">
+                                @foreach ($groottelijst as $grootte)
+                                    <option value="{{ $grootte->id }}">{{ strtoupper($grootte->grootte) }}</option>
+                                @endforeach
+                            </select>
+            <input type="submit" class="bg-[#72C35C] text-white px-4 py-2 text-xl rounded-md hover:bg-[#61A84E] font-koulen" value="Bestel Nu">
             </div>
         </div>
     </div>
+</form>
+@endforeach
 </div>
 </div>
 <!-- Rechter kolom -->

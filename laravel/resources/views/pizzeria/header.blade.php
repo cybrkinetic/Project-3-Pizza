@@ -36,8 +36,9 @@
                 <li><a href="/login" class="text-2xl font-koulen text-[#483F3F] mt-2 mr-2">Inloggen</a></li>
                 <li><a href="/search" class="text-2xl font-koulen text-[#483F3F] mt-2"><img
                             src="img/magnifying-glass-solid.svg" class="h-5 w-auto mt-1 mr-2"></img></a></li>
-                <li><a href="/order" class="text-2xl font-koulen text-[#483F3F] mt-2"><img
-                            src="img/cart-shopping-solid.svg" class="h-5 w-auto mt-1 mr-10"></img></a></li>
+                <li><a href=" {{route('order.index')}}" class="text-2xl font-koulen text-[#483F3F] mt-2"><img
+                            src="img/cart-shopping-solid.svg" class="h-5 w-auto mt-1 mr-10"></img>
+                           </a></li>
             </ul>
         </nav>
     </header>

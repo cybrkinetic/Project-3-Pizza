@@ -2,25 +2,29 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MenuController;
+use App\Http\Controllers\BestellenController;
+use App\Http\Controllers\OrderlijstController;
 
 Route::get('/', function () {
     return view('pizzeria.home');
 });
-Route::get('/menu', function() {
-    return view('pizzeria.menu');
-});
-Route::get('/order', function() {
-    return view('pizzeria.order');
-});
+Route::resource('menu', MenuController::class);
+Route::resource('order', BestellenController::class);
+Route::resource('orderlist', OrderlijstController::class);
+
+
 Route::get('/search', function() {
     return view('pizzeria.search');
-});
+})->name('search');
+
 Route::get('/register', function () {
     return view('auth.register');
-});
+})->name('register');
+
 Route::get('/login', function () {
     return view('auth.login');
-});
+})->name('login');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

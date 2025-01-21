@@ -91,7 +91,7 @@ class BestellenController extends Controller
         $besteldePizza = BesteldePizza::find($id);
         $besteldePizza->delete();
 
-        return redirect()->route('bestelling.index')
+        return redirect()->route('order.index')
             ->with('success', 'Pizza removed successfully');
     }
 }

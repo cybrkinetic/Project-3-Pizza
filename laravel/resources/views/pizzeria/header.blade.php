@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <title>Header</title>
     @vite('resources/css/app.css')
@@ -20,7 +20,7 @@
             <a href="/">
                 <img src="/img/StonksPizzaLOGO.png" class="h-30 w-60 mt-1" href="#">
             </a>
-            <!-- Hamburger Icon -->
+            <!-- Hamburger Icoontje -->
             <button id="menu-toggle" class="sm:hidden text-black p-0 focus:outline-none">
                 <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
@@ -32,17 +32,24 @@
         <!-- Nav menu -->
         <nav id="menu" class="hidden sm:flex sm:space-x-4">
             <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
-                <li><a href="/menu" class="text-2xl font-koulen text-[#483F3F] mt-2 lg:mr-2 {{ request()->is('menu') ? 'bg-[#D9D9D9] rounded px-2' : '' }}">Menu</a></li>
-                @guest <li><a href="/register" class="text-2xl font-koulen text-[#483F3F] mt-2 lg:mr-2">Registreren</a></li>
+                <li><a href="/menu"
+                        class="text-2xl font-koulen text-[#483F3F] mt-2 lg:mr-2 {{ request()->is('menu') ? 'bg-[#D9D9D9] rounded px-2' : '' }}">Menu</a>
+                </li>
+                @guest <li><a href="/register" class="text-2xl font-koulen text-[#483F3F] mt-2 lg:mr-2">Registreren</a>
+                </li>
                 <li><a href="/login" class="text-2xl font-koulen text-[#483F3F] mt-2 lg:mr-2">Inloggen</a></li>@endguest
-                @auth 
-                <li><a href="/orderlist" class="text-2xl font-koulen text-[#483F3F] mt-2 lg:mr-2 {{ request()->is('orderlist') ? 'bg-[#D9D9D9] rounded px-2' : '' }}">Bestellingen</a></li>
-                <li><a href="/dashboard" class="text-2xl font-koulen text-[#483F3F] mt-2 lg:mr-2">Account</a></li>@endauth
+                @auth
+                <li><a href="/orderlist"
+                        class="text-2xl font-koulen text-[#483F3F] mt-2 lg:mr-2 {{ request()->is('orderlist') ? 'bg-[#D9D9D9] rounded px-2' : '' }}">Bestellingen</a>
+                </li>
+                <li><a href="/dashboard" class="text-2xl font-koulen text-[#483F3F] mt-2 lg:mr-2">Account</a></li>
+                @endauth
                 <li><a href="/search" class="text-2xl font-koulen text-[#483F3F] mt-2"><img
                             src="/img/magnifying-glass-solid.svg" class="h-5 w-auto mt-1 lg:mr-2"></img></a></li>
                 <li><a href=" {{route('order.index')}}" class="text-2xl font-koulen text-[#483F3F] mt-2"><img
-                            src="/img/cart-shopping-solid.svg" class="h-5 w-auto mt-1 lg:mr-10 {{ request()->is('order') ? 'bg-[#D9D9D9] rounded px-4 pt-1 pb-1 h-8 -mt-0.5 ' : '' }}"></img>
-                           </a></li>
+                            src="/img/cart-shopping-solid.svg"
+                            class="h-5 w-auto mt-1 lg:mr-10 {{ request()->is('order') ? 'bg-[#D9D9D9] rounded px-4 pt-1 pb-1 h-8 -mt-0.5 ' : '' }}"></img>
+                    </a></li>
             </ul>
         </nav>
     </header>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 </head>
+
 <body>
     @include('pizzeria.header')
 
-    <div class="grid w-full grid-cols-1 p-4 sm:grid-cols-[0.8fr,6.5fr,0.8fr] md:grid-cols-[0.6fr,7fr,0.6fr] lg:grid-cols-[0.8fr,7fr,0.8fr] 2xl:grid-cols-[1.3fr,5fr,1.3fr] gap-4 md:gap-0 min-h-screen">
+    <div
+        class="grid w-full grid-cols-1 p-4 sm:grid-cols-[0.8fr,6.5fr,0.8fr] md:grid-cols-[0.6fr,7fr,0.6fr] lg:grid-cols-[0.8fr,7fr,0.8fr] 2xl:grid-cols-[1.3fr,5fr,1.3fr] gap-4 md:gap-0 min-h-screen">
         <!-- Linkse kolom -->
         <div class="hidden sm:block"></div>
 
@@ -23,32 +26,32 @@
 
             <!-- Pizza's -->
             <div class="grid grid-cols-1 gap-4 px-4">
-            {{-- $besteldePizza->PizzaNaam->id --}}
+                {{-- $besteldePizza->PizzaNaam->id --}}
                 @foreach ($besteldePizzas as $besteldePizza)
-                    <?php
+                <?php
                     $prijs = $besteldePizza->PizzaNaam->pizzaPrijs;
                     $multiply = $besteldePizza->PizzaSize->priceMultiplyer;
                     $pizzaPrijs = $prijs * $multiply;
                     $formattedPrijs = number_format((float) $pizzaPrijs, 2, ',', '');
                     ?>
-                    <div class="bg-[#666060] p-4 rounded-md shadow-lg">
-                        <div class="flex items-center space-x-4">
-                    <div class="h-28 bg-[#7B7373] rounded w-96">
-                        <img src="{{ asset('img/' . strtolower(str_replace(' ', '-', $besteldePizza->PizzaNaam->pizzaNaam)) . '.jpg') }}" 
-                            alt="{{ $besteldePizza->PizzaNaam->pizzaNaam }}" 
-                            class="w-96 h-full object-cover rounded">
-                    </div>
-                    <div>
-                        <p class="text-2xl text-white">{{ $besteldePizza->PizzaNaam->pizzaNaam }}</p>
-                        <p class="text-xl text-[#D9D9D9]">{{ Str::title($besteldePizza->PizzaSize->grootte) }}</p>
-                        <p class="text-xl text-[#D9D9D9]">€{{ $formattedPrijs }}</p>
-                        <p class="text-xl text-[#D9D9D9]">Status: {{ $besteldePizza->PizzaStatus->status}}</p>
+                <div class="bg-[#666060] p-4 rounded-md shadow-lg">
+                    <div class="flex items-center space-x-4">
+                        <div class="h-28 bg-[#7B7373] rounded w-96">
+                            <img src="{{ asset('img/' . strtolower(str_replace(' ', '-', $besteldePizza->PizzaNaam->pizzaNaam)) . '.jpg') }}"
+                                alt="{{ $besteldePizza->PizzaNaam->pizzaNaam }}"
+                                class="w-96 h-full object-cover rounded">
+                        </div>
+                        <div>
+                            <p class="text-2xl text-white">{{ $besteldePizza->PizzaNaam->pizzaNaam }}</p>
+                            <p class="text-xl text-[#D9D9D9]">{{ Str::title($besteldePizza->PizzaSize->grootte) }}</p>
+                            <p class="text-xl text-[#D9D9D9]">€{{ $formattedPrijs }}</p>
+                            <p class="text-xl text-[#D9D9D9]">Status: {{ $besteldePizza->PizzaStatus->status}}</p>
+                        </div>
                     </div>
                 </div>
-                    </div>
                 @endforeach
 
-                <!-- Total and Order Status -->
+                <!-- Totale prijs en status -->
                 <div class="bg-[#E8C63F] font-koulen text-2xl text-[#483F3F] p-4 rounded-md shadow-lg">
                     <?php
                     $formattedTotalPrijs = number_format((float) $totaalPrijs, 2, ',', '');
@@ -59,10 +62,11 @@
             </div>
         </div>
 
-        <!-- Right Column -->
+        <!-- Rechter kolom -->
         <div class="hidden sm:block"></div>
     </div>
 
     @include('pizzeria.footer')
 </body>
+
 </html>

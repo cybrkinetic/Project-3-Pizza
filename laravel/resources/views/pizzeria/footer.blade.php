@@ -131,15 +131,18 @@
             </li>
 
             <li>
-              <a href="#" class="text-white transition hover:opacity-75"> Rotterdam </a>
+              <a href="#" class="text-white transition hover:opacity-75"> Rotterdam<span class="text-[#483F3F]">*</span> </a>
             </li>
 
             <li>
-              <a href="#" class="text-white transition hover:opacity-75"> Amsterdam </a>
+              <a href="#" class="text-white transition hover:opacity-75"> Amsterdam<span class="text-[#483F3F]">*</span> </a>
             </li>
 
             <li>
               <a href="#" class="text-white transition hover:opacity-75"> Zie alle vestigingen </a>
+            </li>
+            <li>
+              <p class="text-[#483F3F]">*Binnenkort</p>
             </li>
           </ul>
         </div>

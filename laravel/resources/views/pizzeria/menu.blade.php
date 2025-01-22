@@ -47,7 +47,9 @@
                 <div></div>
                 <select id="formaat" name="FormaatID" class="select rounded mr-12">
                                 @foreach ($groottelijst as $grootte)
-                                    <option value="{{ $grootte->id }}">{{ strtoupper($grootte->grootte) }}</option>
+                                
+                                    <option value="<?php echo $grootte->id; ?>"  <?php if ($grootte->id == '2'): ?> selected="selected" <?php endif; ?>>
+                                        {{ strtoupper($grootte->grootte) }}</option>
                                 @endforeach
                             </select>
             <input type="submit" class="bg-[#72C35C] text-white px-4 py-2 text-xl rounded-md hover:bg-[#61A84E] font-koulen" value="Bestel Nu">

@@ -15,7 +15,7 @@ class OrderlijstController extends Controller
     {
         $orderlijst = Order::where('userId', auth()->id())->get();
 
-    return view('orderlijst', ['orderlijst' => $orderlijst]);
+    return view('pizzeria.orderlist', ['orderlijst' => $orderlijst]);
     }
 
     /**
@@ -43,7 +43,7 @@ class OrderlijstController extends Controller
             $aangemaakteOrder->orderId = $id;
             $aangemaakteOrder->save();
         }
-        return redirect()->route('orderlijst');
+        return redirect()->route('orderlist.index');
     }
 
     /**
@@ -64,7 +64,7 @@ class OrderlijstController extends Controller
 
         }
 
-        return view('orderShow', compact('besteldePizzas', 'totaalPrijs', 'order'));
+        return view('pizzeria.orderShow', compact('besteldePizzas', 'totaalPrijs', 'order'));
 
     }
 
@@ -93,7 +93,7 @@ class OrderlijstController extends Controller
         $order->statusId = 10;
         $order->save();
 
-        return redirect()->route('orderlijst')
+        return redirect()->route('orderlist')
             ->with('success', 'Order removed successfully');
     }
 }

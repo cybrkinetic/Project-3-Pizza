@@ -43,9 +43,9 @@
                             <input type="hidden" name="UserID" value="{{ auth()->id() }}">
                         @endif
             <p class="text-white text-l mb-3">€{{ number_format($pizza->pizzaPrijs, 2) }}<br><span class="text-xs"> *Prijs verschilt van grootte</span></p>
-            <div class="flex justify-between items-right">
-                <div></div>
-                <select id="formaat" name="FormaatID" class="select rounded mr-12">
+            <div class="flex justify-between items-center">
+                
+                <select id="formaat" name="FormaatID" class="select rounded mr-12 flex">
                                 @foreach ($groottelijst as $grootte)
                                 
                                     <option value="<?php echo $grootte->id; ?>"  <?php if ($grootte->id == '2'): ?> selected="selected" <?php endif; ?>>

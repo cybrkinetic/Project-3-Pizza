@@ -45,7 +45,7 @@
                                     class="text-xs"> *Prijs verschilt van grootte</span></p>
                             <div class="flex justify-between items-center">
 
-                                <select id="formaat" name="FormaatID" class="select rounded mr-12 flex">
+                                <select id="formaat" name="FormaatID" class="select rounded lg:mr-12 mr-0 w-24 py-1 px-1 flex">
                                     @foreach ($groottelijst as $grootte)
 
                                     <option value="<?php echo $grootte->id; ?>" <?php if ($grootte->id == '2'): ?>
@@ -54,7 +54,7 @@
                                     @endforeach
                                 </select>
                                 <input type="submit"
-                                    class="bg-[#72C35C] text-white px-4 py-2 text-xl rounded-md hover:bg-[#61A84E] font-koulen"
+                                    class="bg-[#72C35C] text-white lg:px-4 lg:py-2 text-xl rounded-md hover:bg-[#61A84E] font-koulen px-2 py-1"
                                     value="Bestel Nu">
                             </div>
                     </div>

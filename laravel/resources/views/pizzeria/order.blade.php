@@ -20,13 +20,14 @@
         <div class="hidden sm:block"></div>
 
         <!-- Middel kolom -->
-        <div class="flex flex-col space-y-8">        
-        <h2 class=" mt-10 text-2xl sm:text-3xl xl:text-5xl text-[#483F3F] font-koulen">Jouw Bestelling</h2>
+        <div class="flex flex-col space-y-8">
+            <h2 class=" mt-10 text-2xl sm:text-3xl xl:text-5xl text-[#483F3F] font-koulen">Jouw Bestelling</h2>
             <div class="container mx-auto p-6">
                 <div class="flex flex-col md:flex-row justify-between space-x-0 md:space-x-4">
 
                     <!-- Bestelde pizza's -->
                     <div class="flex-1 space-y-4">
+                        @if($besteldePizzas->isNotEmpty())
                         @foreach ($besteldePizzas as $besteldePizza)
                         <!-- Je bestelling -->
                         <?php
@@ -38,37 +39,47 @@
 
                         <div class="flex justify-between items-center bg-[#666060] text-white rounded-md p-4 shadow-md">
                             <!-- Pizza Info -->
-                            <div class="flex items-center space-x-4">
-                                <div class="h-28 bg-[#7B7373] rounded w-96">
+                            <div class="flex items-center space-x-2">
+                                <div class="h-28 bg-[#7B7373] rounded w-12 sm:w-20 md:w-32">
                                     <img src="{{ asset('img/' . strtolower(str_replace(' ', '-', $besteldePizza->PizzaNaam->pizzaNaam)) . '.jpg') }}"
                                         alt="{{ $besteldePizza->PizzaNaam->pizzaNaam }}"
                                         class="w-96 h-full object-cover rounded">
                                 </div>
                                 <div>
-                                    <p class="text-2xl">{{ $besteldePizza->PizzaNaam->pizzaNaam }}</p>
-                                    <p class="text-xl text-[#D9D9D9]">
+                                    <p class="text-md md:text-2xl">{{ $besteldePizza->PizzaNaam->pizzaNaam }}</p>
+                                    <p class="text-md md:text-xl text-[#D9D9D9]">
                                         {{ Str::title($besteldePizza->PizzaSize->grootte) }}</p>
-                                    <p class="text-xl text-[#D9D9D9]">€{{ $formattedPrijs }}</p>
+                                    <p class="text-md md:text-xl text-[#D9D9D9]">€{{ $formattedPrijs }}</p>
                                 </div>
                             </div>
                             <!-- Verwijder knop -->
-                            <div class="flex items-center">
+                            <div class="flex md:items-center">
                                 <input type="hidden" name="PizzaID" value="{{ $besteldePizza->id }}">
                                 <form class="pizzalist" action="{{ route('order.destroy', $besteldePizza->id) }}"
                                     method="POST">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit"
-                                        class="text-[#72C35C] underline hover:text-[#61A84E]">Verwijderen</button>
+                                        class="text-[#72C35C] text-sm md:text-lg underline hover:text-[#61A84E]">Verwijderen</button>
                                 </form>
                             </div>
                         </div>
                         @endforeach
+                        @else
+                        <div class="flex justify-between items-center bg-[#666060] text-white rounded-md p-4 shadow-md">
+
+                            <div class="flex items-center space-x-4">
+                                <div>
+                                    <p class="text-2xl font-koulen">Er zit momenteel niets in uw winkelwagen.</p>
+                                </div>
+                            </div>
+                        </div>
+                        @endif
                     </div>
 
                     <!-- Bestelling info -->
                     <div class="w-full md:w-1/3">
-                        <div class="bg-[#666060] text-white rounded-md p-4">
+                        <div class="bg-[#666060] text-white rounded-md p-4 mt-2 md:mt-0">
                             <form action="{{ route('orderlist.store') }}" method="POST">
                                 @csrf
                                 @method('POST')
@@ -95,7 +106,6 @@
         <!-- Rechter kolom -->
         <div class="hidden sm:block"></div>
     </div>
-    <script src="js/cart.js"></script>
     @include('pizzeria.footer')
 </body>
 

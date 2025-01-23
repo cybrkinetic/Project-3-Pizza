@@ -4,17 +4,22 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StonksPizzaWPF.Views"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
+        Style="{StaticResource MaterialDesignWindow}"
+        FontFamily="{materialDesign:MaterialDesignFont}" 
         Title="Pizza" Height="450" Width="800">
     <Grid>
         <Label FontSize="32" Grid.Column="1" VerticalAlignment="Bottom" Content="Pizza"/>
 
-        <Grid Grid.Column="3" Grid.ColumnSpan="1" Grid.RowSpan="5" Grid.Row="1" Background="White">
+        <Grid Grid.Column="3" Grid.ColumnSpan="1" Grid.RowSpan="4" Background="White" Margin="0,69,0,17" Opacity="0.995">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
+
             <ListView Grid.Row="0" ItemsSource="{Binding NewPizza}">
+
                 <StackPanel Width="185">
                     <Label>Nieuwe Pizza</Label>
                     <DockPanel>
@@ -28,7 +33,9 @@
                     <Button Click="AddPizzaClick">Toevoegen</Button>
                 </StackPanel>
             </ListView>
-            <ListView Grid.Row="1" VerticalAlignment="Bottom" ItemsSource="{Binding SelectedPizza}">
+
+            <ListView Grid.Row="1" ItemsSource="{Binding SelectedPizza}" Height="98" VerticalAlignment="Center">
+
                 <StackPanel Width="185">
                     <Label>Geselecteerd Pizza</Label>
                     <DockPanel>
@@ -46,18 +53,19 @@
         </Grid>
 
 
-        <ListView ItemsSource="{Binding Pizzas}" SelectedItem="{Binding SelectedPizza}" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="5" Grid.Row="1">
+        <ListView Style="{DynamicResource MaterialDesignListView}" ItemsSource="{Binding Pizzas}" SelectedItem="{Binding SelectedPizza}" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="5" Grid.Row="1">
             <ListView.ItemTemplate>
+                
                 <DataTemplate>
 
                     <StackPanel Width="150" Margin="5">
                         <DockPanel>
-                            <TextBlock Text="Naam:" Margin="2"/>
-                            <TextBlock Text="{Binding PizzaNaam}" Margin="2"/>
+                            <TextBlock Style="{DynamicResource MaterialDesignBodyMediumTextBlock}" Text="Naam:" Margin="2"/>
+                            <TextBlock Style="{DynamicResource MaterialDesignBodyMediumTextBlock}" Text="{Binding PizzaNaam}" Margin="2"/>
                         </DockPanel>
                         <DockPanel>
-                            <TextBlock Text="Unit:" Margin="2"/>
-                            <TextBlock Text="{Binding PizzaPrijs}" Margin="2"/>
+                            <TextBlock Style="{DynamicResource MaterialDesignBodyMediumTextBlock}" Text="Unit:" Margin="2"/>
+                            <TextBlock Style="{DynamicResource MaterialDesignBodyMediumTextBlock}" Text="{Binding PizzaPrijs}" Margin="2"/>
                         </DockPanel>
                         <Button Click="DeletePizzaClick">Verwijder</Button>
                     </StackPanel>
@@ -106,7 +114,6 @@
 
 
         <Grid.Background>
-            
             <ImageBrush ImageSource="Assets/StonksPizzaLOGO.png" Stretch="Uniform"/>
         </Grid.Background>
 

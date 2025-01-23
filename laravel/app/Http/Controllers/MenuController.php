@@ -27,7 +27,7 @@ class MenuController extends Controller
     public function store(Request $request){
 
         if (!auth()->check()) {
-            return redirect()->route('register')->with('message', 'Please register or log in to place an order.');
+            return redirect()->route('register')->with('message', 'Registreer of log in om een bestelling te plaatsen.');
         }
         BesteldePizza::create(
             [
@@ -38,7 +38,7 @@ class MenuController extends Controller
             'userId' => $request['UserID']
         ]);
         return redirect()->route('menu.index')
-            ->with('success', 'Pizza added successfully.');
+            ->with('success', 'Pizza toegevoegd.');
     }
 
 }

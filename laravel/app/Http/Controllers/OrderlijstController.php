@@ -94,6 +94,6 @@ class OrderlijstController extends Controller
         $order->save();
 
         return redirect()->route('orderlist')
-            ->with('success', 'Order removed successfully');
+            ->with('success', 'Bestelling verwijderd.');
     }
 }

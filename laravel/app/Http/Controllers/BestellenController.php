@@ -92,6 +92,6 @@ class BestellenController extends Controller
         $besteldePizza->delete();
 
         return redirect()->route('order.index')
-            ->with('success', 'Pizza removed successfully');
+            ->with('success', 'Pizza verwijderd.');
     }
 }

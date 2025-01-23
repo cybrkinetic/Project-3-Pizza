@@ -8,7 +8,7 @@ use App\Http\Controllers\OrderlijstController;
 
 Route::get('/', function () {
     return view('pizzeria.home');
-});
+})->name('pizzeria.index');
 Route::resource('menu', MenuController::class);
 Route::resource('order', BestellenController::class);
 Route::resource('orderlist', OrderlijstController::class);

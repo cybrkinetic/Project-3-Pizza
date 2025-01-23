@@ -59,8 +59,8 @@
                                 <h3 class="text-xl font-bold">Gratis pizza</h3>
                                 <p>Je derde pizza gratis; exclusief voor onze members</p>
                                 <button
-                                    class="bg-[#72C35C] text-white text-2xl font-koulen px-4 py-2 rounded hover:bg-[#61A84E] mt-4">NAAR
-                                    MENU</button>
+                                    class="bg-[#72C35C] text-white text-2xl font-koulen px-4 py-2 rounded hover:bg-[#61A84E] mt-4"><a href="/menu">NAAR
+                                    MENU</a></button>
                             </div>
                         </div>
 
@@ -74,8 +74,8 @@
                                 <h3 class="text-xl font-bold">Pizza voor 13,49</h3>
                                 <p>Bij twee medium pizza's. Bij bezorgen.</p>
                                 <button
-                                    class="bg-[#72C35C] text-white text-2xl font-koulen px-4 py-2 rounded hover:bg-[#61A84E] mt-4">NAAR
-                                    MENU</button>
+                                    class="bg-[#72C35C] text-white text-2xl font-koulen px-4 py-2 rounded hover:bg-[#61A84E] mt-4"><a href="/menu">NAAR
+                                    MENU</a></button>
                             </div>
                         </div>
 
@@ -89,8 +89,8 @@
                                 <h3 class="text-xl font-bold">Gratis funny meal</h3>
                                 <p>Bij aankoop van twee medium pizza's</p>
                                 <button
-                                    class="bg-[#72C35C] text-white text-2xl font-koulen px-4 py-2 rounded hover:bg-[#61A84E] mt-4">NAAR
-                                    MENU</button>
+                                    class="bg-[#72C35C] text-white text-2xl font-koulen px-4 py-2 rounded hover:bg-[#61A84E] mt-4"><a href="/menu">NAAR
+                                    MENU</a></button>
                             </div>
                         </div>
 
@@ -104,8 +104,8 @@
                                 <h3 class="text-xl font-bold">Hou ons in de gaten</h3>
                                 <p>Er liggen nog meer acties op je te wachten...</p>
                                 <button
-                                    class="bg-[#72C35C] text-white text-2xl font-koulen px-4 py-2 rounded hover:bg-[#61A84E] mt-4">NAAR
-                                    MENU</button>
+                                    class="bg-[#72C35C] text-white text-2xl font-koulen px-4 py-2 rounded hover:bg-[#61A84E] mt-4"><a href="/menu">NAAR
+                                    MENU</a></button>
                             </div>
                         </div>
                     </div>

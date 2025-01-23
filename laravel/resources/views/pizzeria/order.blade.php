@@ -20,10 +20,9 @@
         <div class="hidden sm:block"></div>
 
         <!-- Middel kolom -->
-        <div class="flex flex-col space-y-8">
-
+        <div class="flex flex-col space-y-8">        
+        <h2 class=" mt-10 text-2xl sm:text-3xl xl:text-5xl text-[#483F3F] font-koulen">Jouw Bestelling</h2>
             <div class="container mx-auto p-6">
-                <h1 class="mt-10 font-koulen text-4xl sm:text-4xl xl:text-5xl text-[#483F3F]">Jouw Bestelling</h1>
                 <div class="flex flex-col md:flex-row justify-between space-x-0 md:space-x-4">
 
                     <!-- Bestelde pizza's -->

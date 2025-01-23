@@ -22,7 +22,7 @@
         <!-- Middel kolom -->
         <div class="flex flex-col space-y-8">
             <!-- titel -->
-            <h1 class="text-4xl sm:text-4xl xl:text-5xl text-[#483F3F] font-koulen">Uw Bestellingen</h1>
+            <h2 class="text-2xl sm:text-3xl xl:text-5xl text-[#483F3F] font-koulen">Uw Bestellingen</h2>
 
             <!-- Bestelling lijst -->
             <div class="grid grid-cols-1 gap-4 px-4">

@@ -21,13 +21,8 @@
 
         <!-- Middel kolom -->
         <div class="flex flex-col space-y-8">
-            <!-- Menu navigatie -->
-            <nav class="flex space-x-8 py-5 h-20 text-2xl">
-                <button class="font-koulen bg-[#D9D9D9] text-[#483F3F] rounded px-4 py-1" value="acties">Acties</button>
-                <button class="font-koulen bg-[#D9D9D9] text-[#483F3F] rounded px-4 py-1">Pizza</button>
-                <button class="font-koulen bg-[#D9D9D9] text-[#483F3F] rounded px-4 py-1">Finger Food</button>
-                <button class="font-koulen bg-[#D9D9D9] text-[#483F3F] rounded px-4 py-1">Dranken</button>
-            </nav>
+        <h2 class="text-2xl sm:text-3xl xl:text-5xl text-[#483F3F] font-koulen">Ons menu</h2>
+            
             <!-- Menu vakjes -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
                 @foreach($pizzalijst as $pizza)

@@ -49,6 +49,11 @@
                 <li><a href=" {{route('order.index')}}" class="text-2xl font-koulen text-[#483F3F] mt-2"><img
                             src="/img/cart-shopping-solid.svg"
                             class="h-5 w-auto mt-1 lg:mr-10 {{ request()->is('order') ? 'bg-[#D9D9D9] rounded px-4 pt-1 pb-1 h-8 -mt-0.5 ' : '' }}"></img>
+                            @if(isset($cartItemCount) && $cartItemCount > 0)
+        <span class="bg-[#E8C63F] text-[#483F3F] text-xs rounded-full px-2 absolute -mt-7 ml-3">
+            {{ $cartItemCount }}
+        </span>
+        @endif
                     </a></li>
             </ul>
         </nav>

@@ -12,14 +12,18 @@
     <Grid>
         <Label FontSize="32" Grid.Column="1" VerticalAlignment="Bottom" Content="Pizza"/>
 
-        <Grid Grid.Column="3" Grid.ColumnSpan="1" Grid.RowSpan="4" Background="White" Margin="0,69,0,17" Opacity="0.995">
+        <Grid Grid.Column="3" Grid.ColumnSpan="1" Grid.RowSpan="7" Margin="0,69,0,17" >
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <ListView Grid.Row="0" ItemsSource="{Binding NewPizza}">
-
+            <ListView Height="200"  Style="{DynamicResource MaterialDesignListView}"  Grid.Row="0" ItemsSource="{Binding NewPizza}">
+                <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem" BasedOn="{StaticResource MaterialDesignListBoxItem}">
+                    <Setter Property="Background" Value="White"/>
+                </Style>
+                </ListBox.ItemContainerStyle>
                 <StackPanel Width="185">
                     <Label>Nieuwe Pizza</Label>
                     <DockPanel>
@@ -34,9 +38,13 @@
                 </StackPanel>
             </ListView>
 
-            <ListView Grid.Row="1" ItemsSource="{Binding SelectedPizza}" Height="98" VerticalAlignment="Center">
-
-                <StackPanel Width="185">
+            <ListView Height="200" Style="{DynamicResource MaterialDesignListView}" Grid.Row="1"  Grid.RowSpan="2" ItemsSource="{Binding SelectedPizza}" VerticalAlignment="Top">
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem" BasedOn="{StaticResource MaterialDesignListBoxItem}">
+                        <Setter Property="Background" Value="White"/>
+                    </Style>
+                </ListBox.ItemContainerStyle>
+                <StackPanel  Width="185">
                     <Label>Geselecteerd Pizza</Label>
                     <DockPanel>
                         <TextBlock Text="Naam:" Margin="2" Width="50"/>
@@ -54,6 +62,11 @@
 
 
         <ListView Style="{DynamicResource MaterialDesignListView}" ItemsSource="{Binding Pizzas}" SelectedItem="{Binding SelectedPizza}" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="5" Grid.Row="1">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem" BasedOn="{StaticResource MaterialDesignListBoxItem}">
+                    <Setter Property="Background" Value="White"/>
+                </Style>
+            </ListBox.ItemContainerStyle>
             <ListView.ItemTemplate>
                 
                 <DataTemplate>
@@ -73,7 +86,12 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <ListView ItemsSource="{Binding PizzaIngredients}" SelectedItem="{Binding SelectedPizzaIngredient}" Grid.Column="2" Grid.ColumnSpan="1" Grid.RowSpan="2" Grid.Row="1">
+        <ListView  Style="{DynamicResource MaterialDesignListView}"  ItemsSource="{Binding PizzaIngredients}" SelectedItem="{Binding SelectedPizzaIngredient}" Grid.Column="2" Grid.ColumnSpan="1" Grid.RowSpan="2" Grid.Row="1">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem" BasedOn="{StaticResource MaterialDesignListBoxItem}">
+                    <Setter Property="Background" Value="White"/>
+                </Style>
+            </ListBox.ItemContainerStyle>
             <ListView.ItemTemplate>
                 <DataTemplate>
 
@@ -92,7 +110,12 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <ListView ItemsSource="{Binding Ingredients}" SelectedItem="{Binding SelectedIngredient}" Grid.Column="2" Grid.ColumnSpan="1" Grid.RowSpan="3" Grid.Row="3">
+        <ListView  Style="{DynamicResource MaterialDesignListView}"  ItemsSource="{Binding Ingredients}" SelectedItem="{Binding SelectedIngredient}" Grid.Column="2" Grid.ColumnSpan="1" Grid.RowSpan="3" Grid.Row="3">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem" BasedOn="{StaticResource MaterialDesignListBoxItem}">
+                    <Setter Property="Background" Value="White"/>
+                </Style>
+            </ListBox.ItemContainerStyle>
             <ListView.ItemTemplate>
                 <DataTemplate>
 

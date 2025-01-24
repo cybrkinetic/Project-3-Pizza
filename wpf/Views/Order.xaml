@@ -4,10 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StonksPizzaWPF.Views"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-                Style="{StaticResource MaterialDesignWindow}"
-        FontFamily="{materialDesign:MaterialDesignFont}" 
         Title="Order" Height="450" Width="800">
     <Grid>
         <Label FontSize="32" Grid.Column="1" VerticalAlignment="Bottom" Content="Order"/>
@@ -28,7 +25,7 @@
                         <TextBlock Text="Status:" Margin="2" Width="50"/>
                         <ComboBox ItemsSource="{Binding StatusOrder}" SelectedValuePath="Id" SelectedValue="{Binding SelectedOrder.StatusId}" DisplayMemberPath="StatusString"/>
                     </DockPanel>
-                    <Button Click="UpdateOrderClick">Wijzigen</Button>
+                    <Button Click="UpdateOrderClick">Toevoegen</Button>
                 </StackPanel>
             </ListView>
             <ListView Grid.Row="1" VerticalAlignment="Bottom" ItemsSource="{Binding SelectedPizza}">
@@ -39,7 +36,7 @@
                         <TextBlock Text="{Binding SelectedPizza.Pizza.PizzaNaam}" Margin="2"/>
                     </DockPanel>
                     <DockPanel>
-                        <TextBlock Text="Status:" Margin="2" Width="50"/>
+                        <TextBlock Text="Prijs:" Margin="2" Width="50"/>
                         <ComboBox ItemsSource="{Binding StatusPizza}" SelectedValuePath="Id" SelectedValue="{Binding SelectedPizza.PizzaStatusId}" DisplayMemberPath="StatusString"/>
                     </DockPanel>
                     <Button Click="UpdatePizzaClick">Wijzigen</Button>
@@ -50,11 +47,6 @@
 
 
         <ListView ItemsSource="{Binding Orders}" SelectedItem="{Binding SelectedOrder}" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="5" Grid.Row="1">
-            <ListBox.ItemContainerStyle>
-                <Style TargetType="ListBoxItem" BasedOn="{StaticResource MaterialDesignListBoxItem}">
-                    <Setter Property="Background" Value="White" />
-                </Style>
-            </ListBox.ItemContainerStyle>
             <ListView.ItemTemplate>
                 <DataTemplate>
 
@@ -73,11 +65,6 @@
         </ListView>
 
         <ListView ItemsSource="{Binding Pizzas}" SelectedItem="{Binding SelectedPizza}" Grid.Column="2" Grid.ColumnSpan="1" Grid.RowSpan="5" Grid.Row="1">
-            <ListBox.ItemContainerStyle>
-                <Style TargetType="ListBoxItem" BasedOn="{StaticResource MaterialDesignListBoxItem}">
-                    <Setter Property="Background" Value="White" />
-                </Style>
-            </ListBox.ItemContainerStyle>
             <ListView.ItemTemplate>
                 <DataTemplate>
 

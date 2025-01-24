@@ -7,20 +7,8 @@
       "RelativeMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|solutionrelative:views\\pizza.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|c:\\users\\roman\\documents\\school 2\\op2\\blabla\\project-3-pizza\\wpf\\views\\ingredient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|solutionrelative:views\\ingredient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|c:\\users\\roman\\documents\\school 2\\op2\\blabla\\project-3-pizza\\wpf\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|solutionrelative:views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|c:\\users\\roman\\documents\\school 2\\op2\\blabla\\project-3-pizza\\wpf\\views\\order.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|solutionrelative:views\\order.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|c:\\users\\roman\\documents\\school 2\\op2\\blabla\\project-3-pizza\\wpf\\views\\order.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|solutionrelative:views\\order.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|c:\\users\\roman\\documents\\school 2\\op2\\blabla\\project-3-pizza\\wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -31,12 +19,24 @@
       "RelativeMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|solutionrelative:models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|c:\\users\\roman\\documents\\school 2\\op2\\blabla\\project-3-pizza\\wpf\\views\\order.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|solutionrelative:views\\order.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|c:\\users\\roman\\documents\\school 2\\op2\\blabla\\project-3-pizza\\wpf\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|solutionrelative:views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|c:\\users\\roman\\documents\\school 2\\op2\\blabla\\project-3-pizza\\wpf\\textboxtheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|solutionrelative:textboxtheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|c:\\users\\roman\\documents\\school 2\\op2\\blabla\\project-3-pizza\\wpf\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|solutionrelative:views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|c:\\users\\roman\\documents\\school 2\\op2\\blabla\\project-3-pizza\\wpf\\views\\ingredient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|solutionrelative:views\\ingredient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A1F95BBA-E735-489D-B4A9-B3F5FF304B45}|StonksPizzaWPF.csproj|c:\\users\\roman\\documents\\school 2\\op2\\blabla\\project-3-pizza\\wpf\\models\\besteldepizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,30 +86,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TextBoxTheme.xaml",
-              "DocumentMoniker": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\blabla\\Project-3-Pizza\\wpf\\TextBoxTheme.xaml",
-              "RelativeDocumentMoniker": "TextBoxTheme.xaml",
-              "ToolTip": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\blabla\\Project-3-Pizza\\wpf\\TextBoxTheme.xaml",
-              "RelativeToolTip": "TextBoxTheme.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-21T14:01:42.923Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Ingredient.xaml",
-              "DocumentMoniker": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\blabla\\Project-3-Pizza\\wpf\\Views\\Ingredient.xaml",
-              "RelativeDocumentMoniker": "Views\\Ingredient.xaml",
-              "ToolTip": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\blabla\\Project-3-Pizza\\wpf\\Views\\Ingredient.xaml",
-              "RelativeToolTip": "Views\\Ingredient.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-01-23T09:19:12.783Z",
+              "DocumentIndex": 4,
+              "Title": "Order.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\blabla\\Project-3-Pizza\\wpf\\Views\\Order.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Order.xaml.cs",
+              "ToolTip": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\blabla\\Project-3-Pizza\\wpf\\Views\\Order.xaml.cs",
+              "RelativeToolTip": "Views\\Order.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-26T09:25:47.349Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\blabla\\Project-3-Pizza\\wpf\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\blabla\\Project-3-Pizza\\wpf\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-01-17T10:19:22.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Order.xaml",
               "DocumentMoniker": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\blabla\\Project-3-Pizza\\wpf\\Views\\Order.xaml",
               "RelativeDocumentMoniker": "Views\\Order.xaml",
@@ -133,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\blabla\\Project-3-Pizza\\wpf\\Views\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Views\\MainWindow.xaml.cs",
@@ -141,7 +143,20 @@
               "RelativeToolTip": "Views\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAwwBwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-01-19T09:21:22.714Z"
+              "WhenOpened": "2024-01-19T09:21:22.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TextBoxTheme.xaml",
+              "DocumentMoniker": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\blabla\\Project-3-Pizza\\wpf\\TextBoxTheme.xaml",
+              "RelativeDocumentMoniker": "TextBoxTheme.xaml",
+              "ToolTip": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\blabla\\Project-3-Pizza\\wpf\\TextBoxTheme.xaml",
+              "RelativeToolTip": "TextBoxTheme.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-21T14:01:42.923Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -153,11 +168,12 @@
               "RelativeToolTip": "Models\\StonksPizzaDB.cs",
               "ViewState": "AgIAAMgCAAAAAAAAAAAYwJwDAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-01-16T08:59:41.964Z"
+              "WhenOpened": "2024-01-16T08:59:41.964Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Status.cs",
               "DocumentMoniker": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\blabla\\Project-3-Pizza\\wpf\\Models\\Status.cs",
               "RelativeDocumentMoniker": "Models\\Status.cs",
@@ -165,11 +181,12 @@
               "RelativeToolTip": "Models\\Status.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-01-16T09:47:28.564Z"
+              "WhenOpened": "2024-01-16T09:47:28.564Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\blabla\\Project-3-Pizza\\wpf\\Views\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Views\\MainWindow.xaml",
@@ -177,31 +194,6 @@
               "RelativeToolTip": "Views\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-01-22T13:12:13.546Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Order.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\blabla\\Project-3-Pizza\\wpf\\Views\\Order.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\Order.xaml.cs",
-              "ToolTip": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\blabla\\Project-3-Pizza\\wpf\\Views\\Order.xaml.cs",
-              "RelativeToolTip": "Views\\Order.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-01-26T09:25:47.349Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\blabla\\Project-3-Pizza\\wpf\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\blabla\\Project-3-Pizza\\wpf\\App.xaml",
-              "RelativeToolTip": "App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-01-17T10:19:22.395Z",
               "EditorCaption": ""
             },
             {
@@ -214,7 +206,20 @@
               "RelativeToolTip": "Models\\BesteldePizza.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-01-24T10:24:58.588Z"
+              "WhenOpened": "2024-01-24T10:24:58.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Ingredient.xaml",
+              "DocumentMoniker": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\blabla\\Project-3-Pizza\\wpf\\Views\\Ingredient.xaml",
+              "RelativeDocumentMoniker": "Views\\Ingredient.xaml",
+              "ToolTip": "C:\\Users\\Roman\\Documents\\School 2\\OP2\\blabla\\Project-3-Pizza\\wpf\\Views\\Ingredient.xaml",
+              "RelativeToolTip": "Views\\Ingredient.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-01-23T09:19:12.783Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -226,7 +231,8 @@
               "RelativeToolTip": "Views\\Pizza.xaml.cs",
               "ViewState": "AgIAALMAAAAAAAAAAAAuwMMAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-01-22T09:48:16.776Z"
+              "WhenOpened": "2024-01-22T09:48:16.776Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -238,7 +244,8 @@
               "RelativeToolTip": "StonksPizzaWPF.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-10T11:54:08.591Z"
+              "WhenOpened": "2025-01-10T11:54:08.591Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -250,7 +257,8 @@
               "RelativeToolTip": "Models\\Pizza.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwB4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-01-24T10:28:48.422Z"
+              "WhenOpened": "2024-01-24T10:28:48.422Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -262,7 +270,8 @@
               "RelativeToolTip": "Models\\Order.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwB4AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-01-24T10:28:27.894Z"
+              "WhenOpened": "2024-01-24T10:28:27.894Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -274,7 +283,8 @@
               "RelativeToolTip": "Models\\Ingredient.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-01-16T08:59:38.94Z"
+              "WhenOpened": "2024-01-16T08:59:38.94Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -286,7 +296,8 @@
               "RelativeToolTip": "App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-01-15T10:01:09.795Z"
+              "WhenOpened": "2024-01-15T10:01:09.795Z",
+              "EditorCaption": ""
             }
           ]
         }

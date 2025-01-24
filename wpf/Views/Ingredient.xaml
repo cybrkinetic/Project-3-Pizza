@@ -4,10 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StonksPizzaWPF.Views"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-                Style="{StaticResource MaterialDesignWindow}"
-FontFamily="{materialDesign:MaterialDesignFont}" 
         Title="Ingredient" Height="450" Width="800">
     <Grid>
         <Label FontSize="32" Grid.Column="1" VerticalAlignment="Bottom" Content="Ingrediënten"/>
@@ -48,11 +45,6 @@ FontFamily="{materialDesign:MaterialDesignFont}"
             </ListView>
         </Grid>
         <ListView ItemsSource="{Binding Ingredients}" SelectedItem="{Binding SelectedIngredient}" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="5" Grid.Row="1">
-            <ListBox.ItemContainerStyle>
-                <Style TargetType="ListBoxItem" BasedOn="{StaticResource MaterialDesignListBoxItem}">
-                    <Setter Property="Background" Value="White" />
-                </Style>
-            </ListBox.ItemContainerStyle>
             <ListView.ItemTemplate>
                 <DataTemplate>
 
